@@ -1,0 +1,9 @@
+SELECT 
+
+Class
+
+FROM DimProduct
+
+WHERE Class <> 'H' OR  Class IS NULL 
+-- Joining two conditions together
+-- WHERE Class IS NOT "NULL"

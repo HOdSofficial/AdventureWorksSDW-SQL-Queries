@@ -1,0 +1,13 @@
+--Report of all sales transaction for the latest date
+SELECT 
+
+    InvoiceNumber,
+    InvoiceLineNumber,
+    OrderDate,
+    SalesAmount,
+    ProduvtName,
+    ProductSUbCategory
+
+FROM vwOrdersALL
+
+WHERE OrderDate = (SELECT(MAX(OrderDate)FROM vwOrderAll)
